@@ -13,8 +13,8 @@ const DrawerNavigator = () => {
     return (
         <Drawer.Navigator initialRouteName="Home">
             <Drawer.Screen name="Home" component={StackNavigator} />
-             <Drawer.Screen name="RMS" component={RmsNavigator} />
-             <Drawer.Screen name="Quiz" component={QuizNavigator} />
+            <Drawer.Screen name="RMS" component={RmsNavigator} />
+            <Drawer.Screen name="Quiz" component={QuizNavigator} />
         </Drawer.Navigator>
     )
 }
