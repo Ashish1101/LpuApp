@@ -1,10 +1,12 @@
 import React from 'react'
-import {Text , View} from 'react-native'
+import {Button, Text , View} from 'react-native'
 
-const About = () => {
+const About = ({navigation}) => {
     return (
         <View>
+              <Button title="About" onPress={() => navigation.navigate('About')}/>
             <Text>Inside About</Text>
+          
         </View>
     )
 }

@@ -28,7 +28,7 @@ const style = StyleSheet.create({
         justifyContent:'center',
         // paddingVertical:180,
         paddingBottom:40,
-        marginHorizontal:5
+        marginHorizontal:8
     },
     secondaryContainer: {
         flexDirection:'row',
