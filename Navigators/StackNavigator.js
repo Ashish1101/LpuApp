@@ -25,8 +25,8 @@ const StackNavigator = ({navigation}) => {
     
     return (
      <>
-        <StatusBar networkActivityIndicatorVisible animated backgroundColor="white" style="dark" />
-     <Stack.Navigator screenOptions={{headerTitleAlign:'center'}}>
+        <StatusBar networkActivityIndicatorVisible animated backgroundColor="#e0b03f" style="dark" />
+           <Stack.Navigator screenOptions={{headerTitleAlign:'center' , headerStyle: {backgroundColor:'#d99b09'}}}>
             <Stack.Screen name="Home" component={Home} 
              options={{headerRight: () => <TouchableOpacity style={{marginRight:8}} onPress={() => navigation.navigate('Message')}>
                <AntDesign name="message1" size={26} color="black" />
@@ -55,7 +55,7 @@ const StackNavigator = ({navigation}) => {
 
 const RmsNavigator = ({navigation}) => {
     return (
-    <Stack.Navigator screenOptions={{headerTitleAlign:'center' , headerLeft: () => (
+    <Stack.Navigator screenOptions={{headerTitleAlign:'center' , headerStyle: {backgroundColor:'#d99b09'}  , headerLeft: () => (
         <TouchableOpacity style={{marginLeft:20}} onPress={() => navigation.toggleDrawer()}>
           <Feather name="menu" size={26} color="black" />
         </TouchableOpacity>
@@ -67,7 +67,7 @@ const RmsNavigator = ({navigation}) => {
 
 const QuizNavigator = ({navigation}) => {
     return (
-    <Stack.Navigator screenOptions={{headerTitleAlign:'center' , headerLeft: () => (
+    <Stack.Navigator screenOptions={{headerTitleAlign:'center' , headerStyle: {backgroundColor:'#d99b09'} , headerLeft: () => (
         <TouchableOpacity style={{marginLeft:20}} onPress={() => navigation.toggleDrawer()}>
           <Feather name="menu" size={26} color="black" />
         </TouchableOpacity>

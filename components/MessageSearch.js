@@ -7,11 +7,12 @@ const MessageSearch = () => {
         <View style={style.container}>
             <AntDesign name="search1" size={24} color="black" style={style.icon} />
             <TextInput
+            style={style.textInput}
             placeholder="Search..."
             value={text} 
             onChangeText={(val) => {
-                console.log(text)
-                setText(val)
+            console.log(text)
+            setText(val)
             }}
              />
         </View>
@@ -20,21 +21,26 @@ const MessageSearch = () => {
 
 const style = StyleSheet.create({
     container: {
+        
         elevation:5,
         flexDirection:'row',
         flex:1,
         alignItems:'center',
         borderBottomWidth:0.5,
-        borderBottomColor:'gray'
+        borderBottomColor:'gray',
+      
+        justifyContent:'flex-start'
     },
     textInput: {
-        height:50,
+        
         borderColor:'gray',
-        elevation:3,
+        flex:1,
+        paddingVertical:8,
+        paddingHorizontal:10
     },
     icon: {
-        paddingHorizontal:5,
-        marginLeft:5
+        paddingHorizontal:6,
+        marginLeft:6,
     }
 })
 

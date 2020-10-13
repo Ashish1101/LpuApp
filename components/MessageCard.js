@@ -7,7 +7,7 @@ const MessageCard = ({type , message , name , date}) => {
            <View style={style.secContainer}>
              <Text style={style.heading}>{type}</Text>
             <Text style={style.detail }>{message}</Text>
-             <Text>{name} {date}</Text>
+             <Text style={style.name}>{name} {date}</Text>
            </View>
         </View>
     )
@@ -29,13 +29,17 @@ const style = StyleSheet.create({
    heading: {
        paddingVertical:3,
        marginVertical:6,
-       fontSize:16
+       fontSize:16,
+       color:'orange'
    },
    detail: {
        paddingBottom:10,
        borderBottomColor:'#d9dade' ,
        borderBottomWidth:2,
        fontSize:14
+   },
+   name: {
+       color:'orange'
    }
 })
 

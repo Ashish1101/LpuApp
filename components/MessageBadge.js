@@ -11,11 +11,13 @@ const MessageBadge = ({number}) => {
 
 const style = StyleSheet.create({
     container: {
-        backgroundColor:'#ff547c',
+        backgroundColor:'#ffd269',
         marginRight:5,
         paddingVertical:5,
         paddingHorizontal:10,
-        borderRadius:50
+        borderRadius:50,
+        borderColor:'gray',
+        borderWidth:2
     },
     text:{
         fontWeight:'bold'

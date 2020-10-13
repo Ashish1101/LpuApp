@@ -5,12 +5,16 @@ import { StyleSheet, Text, View } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native'
 import StackNavigator from './Navigators/StackNavigator'
 import DrawerNavigator from './Navigators/DrawerNavigator'
+import { Provider as PaperProvider } from 'react-native-paper';
+
 
 export default function App() {
   return (
-    <NavigationContainer>
+    <PaperProvider>
+      <NavigationContainer>
         <DrawerNavigator />
     </NavigationContainer>
+    </PaperProvider>
   );
 }
 

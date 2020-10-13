@@ -26,7 +26,7 @@ const style = StyleSheet.create({
     elevation: 5
 }, 
    header: {
-       backgroundColor:'teal',
+       backgroundColor:'#ffaa42',
        textAlign:'center'
    },
    text: {
